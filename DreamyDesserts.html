@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dreamy Desserts</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #fff0f5;
+            color: #663344;
+        }
+
+        header {
+            background-color: #d98bb8;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #f8d7eb;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #663344;
+            text-decoration: none;
+            margin: 12px;
+            font-weight: bold;
+        }
+
+        .banner {
+            background-color: #eadcff;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .banner button {
+            background-color: #a64d91;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .item {
+            background-color: white;
+            width: 210px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 2px 2px 8px #e0c5d5;
+        }
+
+        .picture {
+            background-color: #fff0f8;
+            padding: 20px;
+            font-size: 55px;
+            border-radius: 10px;
+        }
+
+        .price {
+            color: #a83270;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #d66bb5;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact {
+            background-color: #f8d7eb;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #663344;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .item {
+                width: 80%;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🍰 Dreamy Desserts</h1>
+        <p>Sweet Treats, Happy Hearts!</p>
+    </header>
+
+<nav>
+    <a href="Dreamydesserts.html">Home</a>
+    <a href="treats.html">Our Treats</a>
+    <a href="custom.html">Custom Cakes</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact1.html">Contact</a>
+</nav>
+
+
+    <div class="banner" id="home">
+        <h2>Make Every Moment Sweeter! 💗</h2>
+        <p>Delicious cakes, pastries and cookies made with love.</p>
+        <h3>🎉 Seasonal Offer: 15% OFF on All Cakes!</h3>
+        <button onclick="location.href='#menu'">Explore Treats</button>
+    </div>
+
+    <h2 id="menu">Our Sweet Collection</h2>
+
+    <div class="gallery">
+
+        <div class="item">
+            <div class="picture">🎂</div>
+            <h3>Chocolate Cake</h3>
+            <p>Rich chocolate with creamy frosting.</p>
+            <p class="price">₹450</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="item">
+            <div class="picture">🥐</div>
+            <h3>Fresh Pastries</h3>
+            <p>Soft, fluffy and delicious treats.</p>
+            <p class="price">₹100</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="item">
+            <div class="picture">🍪</div>
+            <h3>Choco Cookies</h3>
+            <p>Crunchy cookies with chocolate chips.</p>
+            <p class="price">₹150</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="item">
+            <div class="picture">🧁</div>
+            <h3>Cupcakes</h3>
+            <p>Pretty cupcakes with creamy toppings.</p>
+            <p class="price">₹80</p>
+            <button>Order Now</button>
+        </div>
+
+    </div>
+
+    <div class="banner" id="custom">
+        <h2>🎨 Custom Cake Designs</h2>
+        <p>Birthday cakes, wedding cakes and special designs!</p>
+        <p>Choose your favourite flavour, colour and decoration.</p>
+        <button>Customize Your Cake</button>
+    </div>
+
+    <h2>📸 Our Cake Gallery</h2>
+
+    <div class="gallery">
+        <div class="item">
+            <div class="picture">🍓🎂</div>
+            <p>Strawberry Cake</p>
+        </div>
+
+        <div class="item">
+            <div class="picture">🍫🍰</div>
+            <p>Chocolate Pastry</p>
+        </div>
+
+        <div class="item">
+            <div class="picture">🌈🧁</div>
+            <p>Rainbow Cupcakes</p>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <h2>Contact Us 💌</h2>
+        <p>Address: Main Road, Hyderabad</p>
+        <p>Phone: 9876543210</p>
+        <p>Opening Hours: 9 AM - 9 PM</p>
+    </div>
+
+    <footer>
+        <p>© 2026 Dreamy Desserts</p>
+        <p>Made with Love and Sugar! 💗</p>
+    </footer>
+
+</body>
+</html>
