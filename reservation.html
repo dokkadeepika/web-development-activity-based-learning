@@ -1,0 +1,72 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>South Flavours - Reservation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body { font-family: Georgia, serif; margin: 0; background: #fffaf0; color: #254b35; text-align: center; }
+        header, footer { background: darkgreen; color: white; padding: 20px; }
+        nav { background: #e1ecd9; padding: 15px; }
+        nav a { color: darkgreen; text-decoration: none; margin: 8px; font-weight: bold; display: inline-block; }
+        nav a:hover { color: #b46b2c; }
+        .reservation { padding: 30px 10px; }
+        input, select { width: 250px; max-width: 85%; padding: 10px; margin: 8px; border: 1px solid #aab9a2; border-radius: 5px; }
+        button { background: darkgreen; color: white; padding: 12px 22px; border: none; border-radius: 5px; cursor: pointer; }
+        footer { margin-top: 25px; }
+        @media (max-width: 600px) { nav a { margin: 5px; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🌿 South Flavours</h1>
+    <p>Authentic Taste • Warm Hospitality</p>
+</header>
+
+<nav>
+    <a href="index3.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="chefs.html">Chefs</a>
+    <a href="ambience.html">Ambience</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="reservation.html">Reservation</a>
+    <a href="contact3.html">Contact</a>
+</nav>
+
+<div class="reservation">
+    <h2>🍽️ Reserve Your Table</h2>
+    <p>Plan your next visit with us!</p>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <br>
+        <input type="email" placeholder="Your Email" required>
+        <br>
+        <input type="date" required>
+        <br>
+        <select required>
+            <option value="">Select Number of Guests</option>
+            <option>1 Guest</option>
+            <option>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4 Guests</option>
+            <option>5 or More Guests</option>
+        </select>
+        <br>
+        <input type="time" required>
+        <br>
+        <button type="submit">Book a Table</button>
+    </form>
+</div>
+
+<footer>
+    <h3>🌿 South Flavours</h3>
+    <p>Good Food, Good Mood!</p>
+    <p>© 2026 South Flavours. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

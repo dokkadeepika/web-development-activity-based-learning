@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>South Flavours - Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Georgia, serif;
+            margin: 0;
+            background-color: #fffaf0;
+            color: #254b35;
+            text-align: center;
+        }
+        header, footer {
+            background-color: darkgreen;
+            color: white;
+            padding: 20px;
+        }
+        nav { background-color: #e1ecd9; padding: 15px; }
+        nav a {
+            color: darkgreen;
+            text-decoration: none;
+            margin: 8px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        nav a:hover { color: #b46b2c; }
+        .section { padding: 25px 10px; }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+        }
+        .card {
+            background-color: white;
+            width: 220px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #d5dfcf;
+        }
+        .picture { font-size: 40px; }
+        .price { color: darkgreen; font-weight: bold; }
+        footer { margin-top: 25px; }
+        @media (max-width: 600px) {
+            nav a { margin: 5px; }
+            .card { width: 80%; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🌿 South Flavours</h1>
+    <p>Authentic Taste • Warm Hospitality</p>
+</header>
+
+<nav>
+    <a href="index3.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="chefs.html">Chefs</a>
+    <a href="ambience.html">Ambience</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="reservation.html">Reservation</a>
+    <a href="contact3.html">Contact</a>
+</nav>
+
+<div class="section">
+    <h2>🍽️ Our Special Menu</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="picture">🥞</div>
+            <h3>Masala Dosa</h3>
+            <p>Crispy dosa with potato filling.</p>
+            <p class="price">₹120</p>
+        </div>
+        <div class="card">
+            <div class="picture">🥣</div>
+            <h3>Idli and Sambar</h3>
+            <p>Soft idlis served with hot sambar.</p>
+            <p class="price">₹80</p>
+        </div>
+        <div class="card">
+            <div class="picture">🍛</div>
+            <h3>South Indian Meals</h3>
+            <p>Rice, curry and fresh vegetables.</p>
+            <p class="price">₹180</p>
+        </div>
+        <div class="card">
+            <div class="picture">☕</div>
+            <h3>Filter Coffee</h3>
+            <p>Traditional South Indian coffee.</p>
+            <p class="price">₹50</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <h3>🌿 South Flavours</h3>
+    <p>Good Food, Good Mood!</p>
+    <p>© 2026 South Flavours. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

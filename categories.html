@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MahaKart - Categories</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f4f6f9;
+            color: #222;
+        }
+
+        header {
+            background-color: #172b4d;
+            color: white;
+            padding: 18px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 { margin: 5px; }
+
+        nav {
+            background-color: #ffcc33;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #172b4d;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        .categories {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .categories span {
+            display: inline-block;
+            background-color: white;
+            padding: 12px 18px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        footer {
+            background-color: #172b4d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            header { flex-direction: column; }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🛍️ MahaKart</h1>
+        <p>Your Shopping, Your Choice!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">🛒 Cart</a>
+    </nav>
+
+    <div class="categories" id="categories">
+        <h2>Shop by Category</h2>
+        <span>📱 Electronics</span>
+        <span>👕 Fashion</span>
+        <span>⌚ Accessories</span>
+        <span>🏠 Home</span>
+    </div>
+
+    <footer>
+        <p>© 2026 MahaKart | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
