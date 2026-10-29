@@ -2,10 +2,10 @@
 <html>
 <head>
     <title>South Flavours Restaurant</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Georgia, serif;
             margin: 0;
             background-color: #fffaf0;
             color: #254b35;
@@ -15,7 +15,7 @@
             background-color: darkgreen;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 25px;
         }
 
         nav {
@@ -27,64 +27,94 @@
         nav a {
             color: darkgreen;
             text-decoration: none;
-            margin: 12px;
+            margin: 10px;
             font-weight: bold;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: white;
         }
 
         .banner {
             background-color: #e6efd9;
             text-align: center;
-            padding: 30px;
+            padding: 55px 20px;
+        }
+
+        .banner h2 {
+            font-size: 36px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: darkgreen;
+            color: white;
+            padding: 12px 22px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #47764d;
         }
 
         .section {
             text-align: center;
-            padding: 20px;
+            padding: 30px 15px;
         }
 
         .cards {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 20px;
         }
 
         .card {
             background-color: white;
-            width: 210px;
-            padding: 15px;
-            margin: 5px;
+            width: 220px;
+            padding: 18px;
             border-radius: 10px;
-            box-shadow: 2px 2px 7px #cccccc;
+            box-shadow: 2px 2px 8px #cccccc;
         }
 
         .picture {
-            font-size: 50px;
+            font-size: 48px;
             background-color: #f5f0df;
             padding: 15px;
             border-radius: 10px;
         }
 
-        button {
-            background-color: darkgreen;
-            color: white;
-            padding: 10px 18px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        .price {
+            color: darkgreen;
+            font-weight: bold;
         }
 
         .reservation {
             background-color: #e6efd9;
             text-align: center;
-            padding: 25px;
+            padding: 30px 15px;
         }
 
         input, select {
-            padding: 10px;
+            box-sizing: border-box;
+            padding: 12px;
             margin: 8px;
-            width: 220px;
-            max-width: 85%;
+            width: 280px;
+            max-width: 90%;
+            border: 1px solid #9bb69c;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: darkgreen;
+            color: white;
+            padding: 12px 22px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
         footer {
@@ -96,8 +126,11 @@
 
         @media (max-width: 600px) {
             nav a {
-                display: inline-block;
-                margin: 8px;
+                margin: 7px;
+            }
+
+            .banner h2 {
+                font-size: 27px;
             }
 
             .card {
@@ -109,164 +142,172 @@
 
 <body>
 
-    <header>
-        <h1>🌿 South Flavours</h1>
-        <p>Authentic Taste • Warm Hospitality</p>
-    </header>
+<header>
+    <h1>🌿 South Flavours</h1>
+    <p>Authentic Taste • Warm Hospitality</p>
+</header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#chefs">Chefs</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#reservation">Reservation</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<nav>
+    <a href="index3.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="chefs.html">Chefs</a>
+    <a href="ambience.html">Ambience</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="reservation.html">Reservation</a>
+    <a href="contact3.html">Contact</a>
+</nav>
 
-    <div class="banner" id="home">
-        <h2>Welcome to South Flavours!</h2>
-        <p>Enjoy delicious South Indian food in a
-        warm and peaceful atmosphere.</p>
-        <h3>Fresh Food, Happy Moments!</h3>
-        <button onclick="location.href='#menu'">
-            Explore Our Menu
-        </button>
-    </div>
+<div class="banner" id="home">
+    <h2>Welcome to South Flavours!</h2>
+    <p>Enjoy delicious South Indian food made with love.</p>
+    <h3>Fresh Food, Happy Moments!</h3>
+    <a href="#menu" class="btn">Explore Our Menu</a>
+</div>
 
-    <div class="section" id="menu">
-        <h2>Our Special Menu</h2>
+<div class="section" id="menu">
+    <h2>🍽️ Our Special Menu</h2>
 
-        <div class="cards">
+    <div class="cards">
+        <div class="card">
+            <div class="picture">🥞</div>
+            <h3>Masala Dosa</h3>
+            <p>Crispy dosa with potato filling.</p>
+            <p class="price">₹120</p>
+        </div>
 
-            <div class="card">
-                <div class="picture">🥞</div>
-                <h3>Masala Dosa</h3>
-                <p>Crispy dosa with potato filling.</p>
-                <b>₹120</b>
-            </div>
+        <div class="card">
+            <div class="picture">🥣</div>
+            <h3>Idli and Sambar</h3>
+            <p>Soft idlis served with hot sambar.</p>
+            <p class="price">₹80</p>
+        </div>
 
-            <div class="card">
-                <div class="picture">🥣</div>
-                <h3>Idli and Sambar</h3>
-                <p>Soft idlis served with hot sambar.</p>
-                <b>₹80</b>
-            </div>
+        <div class="card">
+            <div class="picture">🍛</div>
+            <h3>South Indian Meals</h3>
+            <p>Rice, curry and fresh vegetables.</p>
+            <p class="price">₹180</p>
+        </div>
 
-            <div class="card">
-                <div class="picture">🍛</div>
-                <h3>South Indian Meals</h3>
-                <p>Rice, curry and fresh vegetables.</p>
-                <b>₹180</b>
-            </div>
-
-            <div class="card">
-                <div class="picture">☕</div>
-                <h3>Filter Coffee</h3>
-                <p>Traditional South Indian coffee.</p>
-                <b>₹50</b>
-            </div>
-
+        <div class="card">
+            <div class="picture">☕</div>
+            <h3>Filter Coffee</h3>
+            <p>Traditional South Indian coffee.</p>
+            <p class="price">₹50</p>
         </div>
     </div>
+</div>
 
-    <div class="section" id="chefs">
-        <h2>Meet Our Chefs 👨‍🍳</h2>
+<div class="section" id="chefs">
+    <h2>👨‍🍳 Meet Our Chefs</h2>
 
-        <div class="cards">
-            <div class="card">
-                <div class="picture">👨‍🍳</div>
-                <h3>Chef Arjun</h3>
-                <p>Specialist in traditional South Indian dishes.</p>
-            </div>
+    <div class="cards">
+        <div class="card">
+            <div class="picture">👨‍🍳</div>
+            <h3>Chef Arjun</h3>
+            <p>Expert in traditional South Indian dishes.</p>
+        </div>
 
-            <div class="card">
-                <div class="picture">👩‍🍳</div>
-                <h3>Chef Priya</h3>
-                <p>Expert in tasty homemade recipes.</p>
-            </div>
+        <div class="card">
+            <div class="picture">👩‍🍳</div>
+            <h3>Chef Priya</h3>
+            <p>Specialist in delicious homemade recipes.</p>
         </div>
     </div>
+</div>
 
-    <div class="section">
-        <h2>Our Restaurant Ambience 🏡</h2>
-        <p>Enjoy comfortable seating, peaceful surroundings
-        and a welcoming family atmosphere.</p>
-        <div class="cards">
-            <div class="card">
-                <div class="picture">🪴</div>
-                <h3>Green Interiors</h3>
-                <p>A calm and refreshing dining space.</p>
-            </div>
+<div class="section" id="ambience">
+    <h2>🏡 Our Restaurant Ambience</h2>
+    <p>Enjoy comfortable seating and a welcoming family atmosphere.</p>
 
-            <div class="card">
-                <div class="picture">🪑</div>
-                <h3>Family Dining</h3>
-                <p>A lovely place to enjoy meals together.</p>
-            </div>
+    <div class="cards">
+        <div class="card">
+            <div class="picture">🪴</div>
+            <h3>Green Interiors</h3>
+            <p>A calm and refreshing dining space.</p>
+        </div>
+
+        <div class="card">
+            <div class="picture">🪑</div>
+            <h3>Family Dining</h3>
+            <p>A lovely place to enjoy meals together.</p>
+        </div>
+
+        <div class="card">
+            <div class="picture">✨</div>
+            <h3>Warm Atmosphere</h3>
+            <p>Comfortable surroundings for every occasion.</p>
         </div>
     </div>
+</div>
 
-    <div class="section" id="reviews">
-        <h2>Customer Testimonials ⭐</h2>
+<div class="section" id="reviews">
+    <h2>⭐ Customer Testimonials</h2>
 
-        <div class="cards">
-            <div class="card">
-                <p>"Delicious food and friendly service!"</p>
-                <b>★★★★★</b>
-                <p>— Happy Customer</p>
-            </div>
+    <div class="cards">
+        <div class="card">
+            <p>"Delicious food and friendly service!"</p>
+            <p class="price">★★★★★</p>
+            <p>— Happy Customer</p>
+        </div>
 
-            <div class="card">
-                <p>"A wonderful place for family dining."</p>
-                <b>★★★★★</b>
-                <p>— Satisfied Guest</p>
-            </div>
+        <div class="card">
+            <p>"A wonderful place for family dining."</p>
+            <p class="price">★★★★★</p>
+            <p>— Satisfied Guest</p>
+        </div>
+
+        <div class="card">
+            <p>"Loved the dosa and traditional filter coffee!"</p>
+            <p class="price">★★★★★</p>
+            <p>— Regular Visitor</p>
         </div>
     </div>
+</div>
 
-    <div class="reservation" id="reservation">
-        <h2>Reserve Your Table 🍽️</h2>
-        <p>Book a table for your next visit.</p>
+<div class="reservation" id="reservation">
+    <h2>🍽️ Reserve Your Table</h2>
+    <p>Plan your next visit with us!</p>
 
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <br>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <br>
 
-            <input type="email" placeholder="Your Email" required>
-            <br>
+        <input type="email" placeholder="Your Email" required>
+        <br>
 
-            <input type="date" required>
-            <br>
+        <input type="date" required>
+        <br>
 
-            <select required>
-                <option value="">Select Number of Guests</option>
-                <option>1 Guest</option>
-                <option>2 Guests</option>
-                <option>3 Guests</option>
-                <option>4 Guests</option>
-                <option>5 or More Guests</option>
-            </select>
-            <br>
+        <select required>
+            <option value="">Select Number of Guests</option>
+            <option>1 Guest</option>
+            <option>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4 Guests</option>
+            <option>5 or More Guests</option>
+        </select>
+        <br>
 
-            <input type="time" required>
-            <br>
+        <input type="time" required>
+        <br>
 
-            <button type="submit">Book a Table</button>
-        </form>
-    </div>
+        <button type="submit">Book a Table</button>
+    </form>
+</div>
 
-    <div class="section" id="contact">
-        <h2>Visit Us 📍</h2>
-        <p><b>Address:</b> Main Road, Hyderabad</p>
-        <p><b>Opening Hours:</b> 8:00 AM – 10:00 PM</p>
-        <p><b>Phone:</b> 9876543210</p>
-    </div>
+<div class="section" id="contact">
+    <h2>📍 Visit Us</h2>
+    <p><b>Address:</b> Main Road, Hyderabad</p>
+    <p><b>Opening Hours:</b> 8:00 AM – 10:00 PM</p>
+    <p><b>Phone:</b> 9876543210</p>
+</div>
 
-    <footer>
-        <h3>🌿 South Flavours</h3>
-        <p>Good Food, Good Mood!</p>
-        <p>© 2026 South Flavours. All Rights Reserved.</p>
-    </footer>
+<footer>
+    <h3>🌿 South Flavours</h3>
+    <p>Good Food, Good Mood!</p>
+    <p>© 2026 South Flavours. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
